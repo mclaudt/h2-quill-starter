@@ -49,4 +49,6 @@ object Main extends App {
 
   println(run(query[Todo].filter(_.checked==true)))
 
+  scala.io.StdIn.readInt()
+
 }
