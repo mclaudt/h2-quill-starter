@@ -14,7 +14,7 @@ object Main extends App {
 
   Class.forName("org.h2.Driver")
 
-  // Connection to create the whole database
+  // Connection to create the database
   DriverManager.getConnection("jdbc:h2:tcp://localhost/~/h2test;MODE=PostgreSQL;AUTO_SERVER=TRUE", "sa", "")
 
   Server.createWebServer().start()
